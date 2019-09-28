@@ -6,15 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://sqw475sqw.github.io">
-  <title>Archives: 2019 | Hexo</title>
+  <title>如何解决git clone指令下载慢的方法 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://sqw475sqw.github.io/archives/2019/index.html">
+  <meta name="description" content="当我们在Ubuntu下或者在ssh客户端(如Putty和Mobaxterm，其作用就是帮助我们在windows下去连接并操作linux服务器)时， 然后我们需要通过git clone命令下载GitHub中的文件或者程序时，其网速只有几kb每秒。 所以我接下来介绍一种方法来解决被限速的问题 首先登录下网址：https://www.ipaddress.com/ 查下github.com和github.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何解决git clone指令下载慢的方法">
+<meta property="og:url" content="https://sqw475sqw.github.io/2019/09/27/如何解决git clone指令下载慢的方法/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="当我们在Ubuntu下或者在ssh客户端(如Putty和Mobaxterm，其作用就是帮助我们在windows下去连接并操作linux服务器)时， 然后我们需要通过git clone命令下载GitHub中的文件或者程序时，其网速只有几kb每秒。 所以我接下来介绍一种方法来解决被限速的问题 首先登录下网址：https://www.ipaddress.com/ 查下github.com和github.">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="https://raw.githubusercontent.com/sqw475sqw/MarkdownPhotos/master/11.PNG">
+<meta property="og:image" content="https://raw.githubusercontent.com/sqw475sqw/MarkdownPhotos/master/12.PNG">
+<meta property="og:image" content="https://raw.githubusercontent.com/sqw475sqw/MarkdownPhotos/master/14.PNG">
+<meta property="og:image" content="https://raw.githubusercontent.com/sqw475sqw/MarkdownPhotos/master/13.PNG">
+<meta property="og:updated_time" content="2019-09-28T08:09:51.705Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="如何解决git clone指令下载慢的方法">
+<meta name="twitter:description" content="当我们在Ubuntu下或者在ssh客户端(如Putty和Mobaxterm，其作用就是帮助我们在windows下去连接并操作linux服务器)时， 然后我们需要通过git clone命令下载GitHub中的文件或者程序时，其网速只有几kb每秒。 所以我接下来介绍一种方法来解决被限速的问题 首先登录下网址：https://www.ipaddress.com/ 查下github.com和github.">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/sqw475sqw/MarkdownPhotos/master/11.PNG">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -150,130 +159,165 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-如何解决git clone指令下载慢的方法" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      如何解决git clone指令下载慢的方法
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/27/如何解决git clone指令下载慢的方法/" class="archive-article-date">
+
+        
+        <a href="/2019/09/27/如何解决git clone指令下载慢的方法/" class="archive-article-date">
   	<time datetime="2019-09-27T05:59:24.302Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-27</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/27/如何解决git clone指令下载慢的方法/">如何解决git clone指令下载慢的方法</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>当我们在Ubuntu下或者在ssh客户端(如Putty和Mobaxterm，其作用就是帮助我们在windows下去连接并操作linux服务器)时，</p>
+<p>然后我们需要通过git clone命令下载GitHub中的文件或者程序时，其网速只有几kb每秒。</p>
+<p>所以我接下来介绍一种方法来解决被限速的问题</p>
+<p>首先登录下网址：<a href="https://www.ipaddress.com/" target="_blank" rel="noopener">https://www.ipaddress.com/</a></p>
+<p>查下github.com和github.global.ssl.fastly.net    ，如下图：</p>
+<p><img src="https://raw.githubusercontent.com/sqw475sqw/MarkdownPhotos/master/11.PNG" alt="l1.PNG"><br><img src="https://raw.githubusercontent.com/sqw475sqw/MarkdownPhotos/master/12.PNG" alt="l2.PNG"></p>
+<p>对应的IP地址，把获取到的这两个地址复制粘贴到电脑路径为：C:\Windows\System32\drivers\etc下的hosts下，如下图所示：</p>
+<p><img src="https://raw.githubusercontent.com/sqw475sqw/MarkdownPhotos/master/14.PNG" alt="l4.PNG"></p>
+<p>最终前后网速对比如下：</p>
+<p><img src="https://raw.githubusercontent.com/sqw475sqw/MarkdownPhotos/master/13.PNG" alt="l3.PNG"></p>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://sqw475sqw.github.io/2019/09/27/如何解决git clone指令下载慢的方法/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/19/如何在sumline text下插入图片/" class="archive-article-date">
-  	<time datetime="2019-09-19T03:26:48.238Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-19</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/09/19/如何在sumline text下插入图片/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">如何在sumline text下插入图片</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/19/如何在sumline text下插入图片/">如何在sumline text下插入图片</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/01/如何在win7下打开msi文件/" class="archive-article-date">
-  	<time datetime="2019-09-01T14:27:16.079Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-01</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/01/如何在win7下打开msi文件/">如何在win7电脑打开msi文件</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/31/hello-world/" class="archive-article-date">
-  	<time datetime="2019-08-31T15:54:58.298Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-31</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/31/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -296,8 +340,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
